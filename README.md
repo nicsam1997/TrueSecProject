@@ -39,7 +39,7 @@ dotnet test
 From the root directory run:
 
 ```sh
-dotnet run --project src/TrueSecProject.csproj
+dotnet run --project src/TrueSecProject.csproj --launch-profile http
 ```
 
 ### 5. Try the API
