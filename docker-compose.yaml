@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: truesec-mongo-db
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+
+      MONGO_APP_USER: truesec_user
+      MONGO_APP_PASSWORD: truesec_password
+      MONGO_APP_DB: TrueSecDb
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+
+
+volumes:
+  mongodb_data:
+    driver: local
