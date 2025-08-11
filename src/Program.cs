@@ -84,7 +84,6 @@ builder.Services.AddSwaggerGen(options =>
 var app = builder.Build();
 
 app.UseSwagger();
-app.UseHttpsRedirection();
 app.UseSwaggerUI(options =>
 {
     options.SwaggerEndpoint("v1/swagger.json", "Vulnerability API V1");
