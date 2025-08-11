@@ -19,10 +19,8 @@ namespace TrueSecProject.Services
                 return null;
             }
 
-            // Retrieve the user by username
             var user = (await _repository.GetByNameAsync(username))?.toModel();
 
-            // Check if the user exists and the password matches
             if (user != null && user.Password == password)
             {
                 return user;

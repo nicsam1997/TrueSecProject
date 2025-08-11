@@ -1,5 +1,5 @@
 using System.Text.Json.Serialization;
-using TrueSecProject.Serialization; // We will create this converter next
+using TrueSecProject.Serialization;
 
 namespace TrueSecProject.Models;
 

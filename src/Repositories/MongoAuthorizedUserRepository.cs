@@ -5,9 +5,6 @@ using TrueSecProject.Settings;
 
 namespace TrueSecProject.Repositories
 {
-    /// <summary>
-    /// A repository for managing authorized users in a MongoDB database.
-    /// </summary>
     public class MongoAuthorizedUserRepository : IAuthorizedUserRepository
     {
         private readonly IMongoCollection<AuthorizedUserEntity> _authorizedUsers;

@@ -1,6 +1,5 @@
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using TrueSecProject.Models;
 
 namespace TrueSecProject.Swagger;
 
